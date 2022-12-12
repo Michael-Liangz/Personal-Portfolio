@@ -9,7 +9,7 @@
 
   /* TODO ======================= COLORS ======================= */
   /* * Change favorite color */
-  --hue-color: 250; /* Purle 250 - Green 142 - Blue 230 - Pink 340 */
+  --hue-color: 230; /* Purle 250 - Green 142 - Blue 230 - Pink 340 */
 
   /* * HSL color mode --> hsl(hue, saturation, lightness) */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -294,7 +294,7 @@ img {
 }
 
 .home_scroll {
-  /* display: none; */
+  display: none;
 }
 
 .home_scroll-button {
@@ -322,8 +322,42 @@ img {
 }
 
 /* TODO ======================= BUTTONS ======================= */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button_icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
 
 /* TODO ======================= ABOUT ======================= */
+.about_img {
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
 /* TODO ======================= SKILLS ======================= */
 /* TODO ======================= QUALIFICATION ======================= */
 /* TODO ======================= SERVICES ======================= */
+
+/* * Active Modal */
+
+/* TODO ======================= PORTFOLIO ======================= */
+/* TODO ======================= PROJECT IN MIND ======================= */
