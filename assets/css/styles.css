@@ -386,6 +386,106 @@ img {
   justify-content: center;
 }
 /* TODO ======================= SKILLS ======================= */
+.skills_container {
+  row-gap: 0;
+}
+
+.skills_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills_icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skills_title {
+  font-size: var(--h3-font-size);
+}
+
+.skills_subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills_arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills_list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills_titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills_bar {
+  background-color: var(--first-color-lighter);
+}
+
+.skills_percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+/* ! untuk setiap skills bisa dipisah, disesuaikan denagn persentase */
+/* ? contoh: .skills_html {
+   ?    width: 80%;
+   ? } 
+   ? artinya skills yang dimiliki pada html sebesar 80% 
+*/
+.skills_html,
+.skills_css,
+.skills_js,
+.skills_reactjs,
+.skills_php,
+.skills_nodejs,
+.skills_firebase,
+.skills_python,
+.skills_figma,
+.skills_sketch,
+.skills_photoshop {
+  width: 50%;
+}
+
+.skills_close .skills_list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills_open .skills_list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills_open .skills_arrow {
+  transform: rotate(-180deg);
+}
+
 /* TODO ======================= QUALIFICATION ======================= */
 /* TODO ======================= SERVICES ======================= */
 
