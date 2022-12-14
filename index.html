@@ -357,12 +357,12 @@
 
             <div class="qualification_container container">
                 <div class="qualification_tabs">
-                    <div class="qualification_button button--flex">
+                    <div class="qualification_button button--flex qualification_active" data-target="#education">
                         <!-- ! Gambar icon "Toga wisuda" dari https://iconscout.com/unicons/explore/line, Search "graduation-cap"-->
                         <i class="uil uil-graduation-cap qualification_icon"></i>
                         Education
                     </div>
-                    <div class="qualification_button button--flex">
+                    <div class="qualification_button button--flex" data-target="#work">
                         <!-- ! Gambar icon "Tas kerja" dari https://iconscout.com/unicons/explore/line, Search "Briefcase"-->
                         <i class="uil uil-briefcase-alt qualification_icon"></i>
                         Work
@@ -370,7 +370,7 @@
                 </div>
                 <div class="qualification_sections">
                     <!-- TODO ======================= QUALIFICATION CONTENT 1 ======================= -->
-                    <div class="qualification_content">
+                    <div class="qualification_content qualification_active" data-content id="education">
                         <!-- TODO ======================= QUALIFICATION 1 ======================= -->
                         <div class="qualification_data">
                             <div>
@@ -445,7 +445,7 @@
                         </div>
                     </div>
                     <!-- TODO ======================= QUALIFICATION CONTENT 2 ======================= -->
-                    <div class="qualification_content">
+                    <div class="qualification_content" data-content id="work">
                         <!-- TODO ======================= QUALIFICATION 1 ======================= -->
                         <div class="qualification_data">
                             <div>
@@ -504,7 +504,10 @@
                 </div>
             </div>
         </section>
+
         <!-- TODO ======================= SERVICES ======================= -->
+
+
         <!-- TODO ======================= PORTFOLIO ======================= -->
         <!-- TODO ======================= CONTACT ME ======================= -->
 

@@ -43,12 +43,31 @@ function toggleSkills() {
     this.parentNode.className = "skills_content skills_open";
   }
 }
-// ! ClickSkillsName -> kumpulan skill, seperti: Frontend developer, Backend developer dan Designer
-skillsHeader.forEach((ClickSkillsName) => {
-  ClickSkillsName.addEventListener("click", toggleSkills);
+// ! clickSkillsName -> kumpulan skill, seperti: Frontend developer, Backend developer dan Designer
+skillsHeader.forEach((clickSkillsName) => {
+  clickSkillsName.addEventListener("click", toggleSkills);
 });
 
 // TODO ======================= QUALIFICATION TABS =======================
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[data-content]");
+
+// ! tabIcon -> kumpulan qualification berupa penamaan suatu icon, pada: Education dan Work
+tabs.forEach((tabIcon) => {
+  tabIcon.addEventListener("click", () => {
+    const target = document.querySelector(tabIcon.dataset.target);
+
+    tabContents.forEach((tabContentIcon) => {
+      tabContentIcon.classList.remove("qualification_active");
+    });
+    target.classList.add("qualification_active");
+
+    tabs.forEach((tabIcon) => {
+      tabIcon.classList.remove("qualification_active");
+    });
+    tabIcon.classList.add("qualification_active");
+  });
+});
 
 // TODO ======================= SERVICES MODAL =======================
 
