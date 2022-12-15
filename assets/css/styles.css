@@ -667,6 +667,10 @@ img {
 }
 
 /* * Active Modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* TODO ======================= PORTFOLIO ======================= */
 /* TODO ======================= PROJECT IN MIND ======================= */
