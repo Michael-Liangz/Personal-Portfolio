@@ -678,7 +678,7 @@ img {
 }
 
 .portfolio_content {
-  padding: 0 1 0.5rem;
+  padding: 0 1.5rem;
 }
 
 .portfolio_img {
@@ -692,12 +692,44 @@ img {
   margin-bottom: var(--mb-0-5);
 }
 
-.portfolio_descirption {
+.portfolio_description {
   margin-bottom: var(--mb-0-75);
 }
 
 .portfolio_button:hover .button_icon {
   transform: translateX(0.25rem);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.5rem;
+}
+
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  outline: none;
 }
 
 /* TODO ======================= PROJECT IN MIND ======================= */
