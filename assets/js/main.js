@@ -93,7 +93,7 @@ modalCloses.forEach((modalCloseButton) => {
 });
 
 // TODO ======================= PORTFOLIO SWIPER =======================
-let swiper = new Swiper(".portfolio_container", {
+let swiperPortfolio = new Swiper(".portfolio_container", {
   cssMode: true,
   loop: true,
 
@@ -107,10 +107,28 @@ let swiper = new Swiper(".portfolio_container", {
   },
 });
 
-// TODO ======================= SERVICES MODAL =======================
-
 // TODO ======================= TESTIMONIAL =======================
+let swiperTestimonial = new Swiper(".testimonial_container", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 48,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    568: {
+      slidesPerView: 2,
+    },
+  },
+});
 
 // TODO ======================= SCROLL SECTIONS ACRTIVE LINK =======================
 
 // TODO ======================= CHANGE BACKGROUND HEADER =======================
+
+// TODO ======================= SHOW SCROLL TOP =======================
+
+// TODO ======================= DARK LIGHT THEME =======================
