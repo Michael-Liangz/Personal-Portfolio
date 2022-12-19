@@ -341,6 +341,15 @@ img {
   transition: 0.3s;
 }
 
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #fff;
+}
+
 .button--flex {
   display: inline-flex;
   align-items: center;
@@ -733,6 +742,34 @@ img {
 }
 
 /* TODO ======================= PROJECT IN MIND ======================= */
+.project {
+  text-align: center;
+}
+
+.project_background {
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
+
+.project_title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project_description {
+  margin-bottom: var(--mb-1-5);
+}
+
+.project_title,
+.project_description {
+  color: #fff;
+}
+
+.project_img {
+  width: 232px;
+  justify-self: center;
+}
+
 /* TODO ======================= TESTIMONIAL ======================= */
 /* TODO ======================= CONTACT ME ======================= */
 /* TODO ======================= FOOTER ======================= */
