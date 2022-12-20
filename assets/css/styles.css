@@ -900,12 +900,13 @@ img {
   color: var(--first-color-lighter);
 }
 
-.footer_copy {
+/* * Copyright license */
+/* .footer_copy {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
   margin-top: var(--mb-3);
-}
+} */
 
 .footer_title,
 .footer_subtitle,
