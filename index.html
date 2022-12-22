@@ -880,24 +880,27 @@
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
-                            <input type="text" class="contact_input">
+                            <input type="text" class="contact_input user_name" required>
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Email</label>
-                            <input type="email" class="contact_input">
+                            <input type="email" class="contact_input user_email" required>
                         </div>
                     </div>
-                    <div class="contact_content">
+
+                    <!-- ? Label untuk Project-->
+                    <!-- <div class="contact_content">
                         <label for="" class="contact_label">Project</label>
                         <input type="text" class="contact_input">
-                    </div>
+                    </div> -->
                     <div class="contact_content">
                         <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input user_message"
+                            required></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <a href="#" class="button button--flex user_sendButton">
                             Send Message
                             <!-- ! Gambar icon "Contact Me" dari https://iconscout.com/unicons/explore/line, Search "Messege"-->
                             <i class="uil uil-message nav_icon button_icon"></i>
@@ -959,6 +962,22 @@
     <!-- TODO ======================= SWIPER JS ======================= -->
     <!-- ! swiper dari website https://www.jsdelivr.com/package/npm/swiper -->
     <script src="assets/js/swiper-bundle.min.js"></script>
+
+
+    <!-- TODO ======================= EMAIL JS LINK ======================= -->
+    <!-- ! EmailJS dari website https://www.emailjs.com/ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            <!-- ? Diisi dengan Public Key -->
+            emailjs.init("9YcKgtn-o981l2Qu9");
+        })();
+    </script>
+
+    <!-- TODO ======================= SWEET ALERT JS LINK ======================= -->
+    <!-- ! sweet alert js sebagai tampilan modal "success" atau "error", dari website https://sweetalert.js.org/guides/ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- TODO ======================= MAIN JS ======================= -->
     <script src="assets/js/main.js"></script>

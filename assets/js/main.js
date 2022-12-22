@@ -208,3 +208,48 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+// TODO ======================= EMAIL JS =======================
+function validate() {
+  let name = document.querySelector(".user_name");
+  let email = document.querySelector(".user_email");
+  let msg = document.querySelector(".user_message");
+  let sendBtn = document.querySelector(".user_sendButton");
+
+  sendBtn.addEventListener("click", (send) => {
+    send.preventDefault();
+    if (name.value == "" || email.value == "" || msg.value == "") {
+      empryError();
+    } else {
+      sendMail(name.value, email.value, msg.value);
+      success();
+    }
+  });
+}
+validate();
+
+function sendMail(name, email, msg) {
+  emailjs.send("service_97kvymr", "template_kdvjhsh", {
+    from_name: email,
+    to_name: name,
+    message: msg,
+  });
+}
+
+function empryError() {
+  swal({
+    title: "Error!",
+    text: "Fields cannot be empty!",
+    icon: "error",
+    button: "OK",
+  });
+}
+
+function success() {
+  swal({
+    title: "Your Message sent successfully",
+    text: "We try to reply in 24 Hours",
+    icon: "success",
+    button: "OK",
+  });
+}
