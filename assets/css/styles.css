@@ -528,15 +528,15 @@ img {
 }
 
 .skills_php,
-.skills_sql {
+.skills_sql,
+.skills_figma,
+.skills_canva {
   width: 0%;
 }
 
 /* .skills_reactjs,
 .skills_firebase,
 .skills_python,
-.skills_figma,
-.skills_sketch,
 .skills_photoshop {
   width: 50%;
 } */
