@@ -517,19 +517,29 @@ img {
    ? } 
    ? artinya skills yang dimiliki pada html sebesar 80% 
 */
-.skills_html,
-.skills_css,
-.skills_js,
-.skills_reactjs,
+.skills_html {
+  width: 50%;
+}
+.skills_css {
+  width: 40%;
+}
+.skills_js {
+  width: 30%;
+}
+
 .skills_php,
-.skills_nodejs,
+.skills_sql {
+  width: 0%;
+}
+
+/* .skills_reactjs,
 .skills_firebase,
 .skills_python,
 .skills_figma,
 .skills_sketch,
 .skills_photoshop {
   width: 50%;
-}
+} */
 
 .skills_close .skills_list {
   height: 0;
