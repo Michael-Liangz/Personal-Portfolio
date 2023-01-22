@@ -518,13 +518,13 @@ img {
    ? artinya skills yang dimiliki pada html sebesar 80% 
 */
 .skills_html {
-  width: 50%;
-}
-.skills_css {
   width: 40%;
 }
-.skills_js {
+.skills_css {
   width: 30%;
+}
+.skills_js {
+  width: 20%;
 }
 
 .skills_indonesia {
@@ -536,7 +536,10 @@ img {
 }
 
 .skills_php,
-.skills_sql,
+.skills_sql {
+  width: 10%;
+}
+
 .skills_figma,
 .skills_canva {
   width: 0%;
