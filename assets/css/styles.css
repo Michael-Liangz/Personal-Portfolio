@@ -527,12 +527,16 @@ img {
   width: 20%;
 }
 
-.skills_indonesia {
-  width: 85%;
+.skills_teaching {
+  width: 80%;
 }
 
-.skills_english {
-  width: 65%;
+.skills_teamwork {
+  width: 70%;
+}
+
+.skills_problemSolving {
+  width: 60%;
 }
 
 .skills_php,
