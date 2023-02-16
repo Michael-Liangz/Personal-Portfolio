@@ -196,6 +196,7 @@ img {
 .nav_toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  font-size: var(--h2-font-size);
 }
 
 .nav_logo:hover {
