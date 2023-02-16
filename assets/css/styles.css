@@ -1289,6 +1289,11 @@ img {
     justify-self: flex-end;
   }
 
+  .footer_links,
+  .footer_socials {
+    margin-top: 30px;
+  }
+
   /* * Copyright License  */
   /* .footer_copy {
     margin-top: 4.5rem;
