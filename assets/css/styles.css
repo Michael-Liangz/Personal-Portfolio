@@ -20,7 +20,7 @@
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --body-color: hsl(var(--hue-color), 60%, 95%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -40,6 +40,7 @@
   /* TODO ======================= FONT WEIGHT ======================= */
   --font-medium: 500;
   --font-semi-bold: 600;
+  --font-bold: bolder;
 
   /* TODO ======================= MARGENES BOTTOM ======================= */
   /* ? .25rem = 4px, .5rem = 8px, .75rem = 12px */
@@ -195,7 +196,7 @@ img {
 .nav_logo,
 .nav_toggle {
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-bold);
   font-size: var(--h2-font-size);
 }
 
