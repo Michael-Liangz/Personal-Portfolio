@@ -96,13 +96,13 @@ modalCloses.forEach((modalCloseButton) => {
 let swiperPortfolio = new Swiper(".portfolio_container", {
   cssMode: true,
   loop: true,
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
+    dynamicBullets: true,
     clickable: true,
   },
 });
