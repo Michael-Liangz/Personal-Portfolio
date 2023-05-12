@@ -926,11 +926,21 @@ img {
 
 .footer_container {
   row-gap: 3.5rem;
+  /* display: flex;
+  justify-content: space-between;
+  text-align: center; */
 }
 
 .footer_bg {
   background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
+}
+
+.footer_person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .footer_title {
@@ -939,7 +949,7 @@ img {
 }
 
 .footer_subtitle {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .footer_links {
