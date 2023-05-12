@@ -957,6 +957,8 @@ img {
   flex-direction: column;
   row-gap: 1.5rem;
   font-size: var(--normal-font-size);
+  text-align: center;
+  justify-content: center;
 }
 
 .footer_links:hover {
@@ -970,6 +972,12 @@ img {
 
 .footer_social:hover {
   color: var(--first-color-lighter);
+}
+
+.footer_socials {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* * Copyright license */
