@@ -21,7 +21,7 @@
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 93%);
-  --container-color: #fff;
+  --container-color: #f0ffff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -540,9 +540,9 @@ img {
   width: 70%;
 }
 
-.skills_figma,
-.skills_canva {
-  width: 0%;
+.skills_EI,
+.skills_MnR {
+  width: 60%;
 }
 
 /* .skills_reactjs,
@@ -646,7 +646,7 @@ img {
 
 .services_content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--input-color);
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -698,7 +698,7 @@ img {
 
 .services_modal-content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--input-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -956,7 +956,7 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .footer_links:hover {
