@@ -531,12 +531,12 @@ img {
   width: 30%;
 }
 
-.skills_teaching,
-.skills_teamwork {
+.skills_teaching {
   width: 80%;
 }
 
-.skills_problemSolving {
+.skills_problemSolving,
+.skills_teamwork {
   width: 70%;
 }
 
