@@ -1181,9 +1181,9 @@ img {
     column-gap: 2rem;
   }
 
-  .nav_menu {
+  /* .nav_menu {
     margin-left: auto;
-  }
+  } */
 
   .change-theme {
     margin: 0;
@@ -1252,7 +1252,7 @@ img {
   }
 
   .services_content {
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 2rem 0 2rem 2.5rem;
   }
 
   .services_modal-content {
@@ -1301,7 +1301,7 @@ img {
   }
 
   .footer_socials {
-    justify-self: flex-end;
+    justify-self: center;
   }
 
   .footer_links,
@@ -1321,6 +1321,10 @@ img {
   .main,
   .footer_container {
     padding: 0;
+  }
+
+  .footer_container {
+    gap: 40px;
   }
 
   .home_blob {
